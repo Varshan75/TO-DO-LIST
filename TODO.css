@@ -63,6 +63,8 @@ div{
 }
 #bor{
     border: none;
+    display: flex;
+    justify-content: space-evenly;
     margin-left:25% ;
     margin-right: 25%;
     background-color: hsl(46, 89%, 57%);
