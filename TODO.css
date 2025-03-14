@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(99, 98, 98);
+    background-repeat: none;
+    padding-bottom: 100px   ;
+}
+h1{
+    font-family: Showcard Gothic;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+}
+input{
+    border: none;
+    padding: 10px;
+    padding-left:30px ;
+    padding-right: 30px;
+    border-top-right-radius:50px ;  
+    border-bottom-left-radius:25px ;  
+    border-top-left-radius:25px ;
+    font-size: large;
+    font-family: cursive;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    border: 2px solid black;
+}
+input::placeholder{
+    color: rgb(66, 66, 66);
+    font-family: forte Black;
+}
+button{
+    border: 2px solid black;
+    padding: 8px;
+    padding-bottom: 810x;
+    padding-top: 10px;
+    padding-left:20px ;
+    padding-right: 20px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    font-size: large;
+    font-family: Forte;
+    background-color: white;
+    color: rgb(92, 92, 92);
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(247, 190, 69);
+    border: BLACK solid 2px;
+    box-shadow : 5px 5px 5px;
+}
+input:hover{
+    background-color:rgb(247, 190, 69);
+    border: BLACK solid 2px;
+    box-shadow : 5px 5px 5px rgb(126, 126, 129);
+    }
+div{
+    padding: 50px;
+    margin: 10px;
+}
+.divo{
+    color:red;
+    font-family: Showcard Gothic;
+    font-size: 50px;
+}
+#bor{
+    border: none;
+    margin-left:25% ;
+    margin-right: 25%;
+    background-color: hsl(46, 89%, 57%);
+    border-radius: 40px;
+    box-shadow: 3px 3px 5px 5px rgb(8, 8, 8);
+}
+
+.list{
+    list-style-type: none;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Showcard Gothic;
+    color: rgb(10, 10, 10);
+}
+.div{
+    padding: 0px;
+    display: flex;
+    justify-content:space-between;
+}
+
