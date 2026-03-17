@@ -1,38 +1,42 @@
-function appendtaks(){
-    let otask = document.getElementById("ip");
-    if(otask.value == ""){
-        alert("Enter a TASK");  
-    }
-    else{
-    let itask = otask.value.trim();
-    let create = document.createElement("li","br");
-    create.className = "list";
+function addTask() {
+    let input = document.getElementById("taskInput");
+    let taskText = input.value.trim();
 
-    let div = document.createElement("div");
-    div.className = "div";
-    let buttonc = document.createElement("button");
-    buttonc.className = "btc";
-    buttonc.innerText = "complete";
-    buttonc.onclick = function(){
-        create.style.textDecoration = "line-through";
-    };
-    let buttond = document.createElement("button");
-    buttond.className = "btd";
-    buttond.innerText = "delete";
-    buttond.onclick = function(){
-        create.remove();
-    };
-    let ul = document.getElementById("task-list");
-    ul.appendChild(create);
-    let div1 = document.createElement("span");
-    create.appendChild(div);
-    div.innerText = `${itask}`;
-    div.appendChild(div1);
-    div1.appendChild(buttonc);
-    div1.appendChild(buttond);
-    otask.value = "";    
+    if (taskText === "") {
+        alert("Enter a task!");
+        return;
     }
+
+    let li = document.createElement("li");
+
+    let span = document.createElement("span");
+    span.innerText = taskText;
+
+    let btnContainer = document.createElement("div");
+    btnContainer.className = "task-buttons";
+
+    // Complete button
+    let completeBtn = document.createElement("button");
+    completeBtn.innerText = "✔";
+    completeBtn.onclick = function () {
+        li.classList.toggle("completed");
+    };
+
+    // Delete button
+    let deleteBtn = document.createElement("button");
+    deleteBtn.innerText = "✖";
+    deleteBtn.className = "delete";
+    deleteBtn.onclick = function () {
+        li.remove();
+    };
+
+    btnContainer.appendChild(completeBtn);
+    btnContainer.appendChild(deleteBtn);
+
+    li.appendChild(span);
+    li.appendChild(btnContainer);
+
+    document.getElementById("taskList").appendChild(li);
+
+    input.value = "";
 }
-
-
-
