@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="TODO.css">
-    <title>TODO LIST</title>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="TODO.css">
 </head>
 <body>
-    <center><h1 id="head">TO DO LIST</h1></center>
-    <center>
-    <div id = "bor">
-    <input type="text" id="ip" placeholder="Launch a task">
-    <button id="add" onclick="appendtaks()">Add</button>
-    <ul id="task-list"></ul>
-    
-</center>
-    <script src="TODO.js"></script>
+
+<div class="container">
+    <h1>📝 To-Do List</h1>
+
+    <div class="input-section">
+        <input type="text" id="taskInput" placeholder="Enter a task...">
+        <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="TODO.js"></script>
 </body>
 </html>
